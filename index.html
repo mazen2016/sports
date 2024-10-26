@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      text-align: center;
+      color: aliceblue;
+      background-color: black;
+      padding: 10px;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    /*------------------------ Start of Navbar ---------------------------*/
+    nav {
+      background-color: brown;
+      display: flex;
+      justify-content: center;
+      height: 50px;
+    }
+
+    nav>a {
+      text-decoration: none;
+      display: flex;
+      color: rgb(255, 255, 255);
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    nav>a:hover {
+      color: white;
+      background-color: blue;
+      transition: color 0.7s;
+      transition: background-color 0.7;
+    }
+
+    @media (max-width: 300px) {
+      nav {
+        flex-direction: column;
+        height: 100px;
+      }
+    }
+
+    /*------------------------ End of Navbar ---------------------------*/
+    /* ------------------------ Start of footer ------------------------ */
+    footer {
+      background-color: black;
+      color: aliceblue;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* ------------------------ End of footer ------------------------ */
+    /* ------------------------ Start of Main ------------------------ */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    aside {
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    .chess-container {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .black {
+      background-color: black;
+      height: 8vw;
+    }
+
+    .white {
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    @media (max-width:600px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+
+
+
+<body>
+  <header>
+    <h1>sports</h1>
+    <nav>
+      <a href="">home</a>
+      <a href="">About</a>
+      <a href="">Services</a>
+
+      <a href="">Contact</a>
+    </nav>
+  </header>
+<main>
+
+  <section class="content">
+    <article>
+      <h2>Welcome to our sports!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <article>
+      <h2>About Us</h2>
+      <p>We are a software engineering teaching Academy.</p>
+    </article>
+    <div class="chess-container">
+<img src="./realistic-sports-balls-bat-other-equipment-vector-big-set_1150-40626.avif" alt="sports" >
+
+    </div>
+  </section>
+  <aside>
+    <h2>Latest News</h2>
+    <ul>
+      <li><a href="#">New Course Released</a></li>
+      <li><a href="#">Upcoming Events</a></li>
+    </ul>
+  </aside>
+</main>
+<footer>
+  <p>&copy; 2023 my sports </p>
+</footer>
+</body>
+</html>
